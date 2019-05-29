@@ -1,0 +1,25 @@
+{
+  "name": "githook-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "i": "npm install --registry=https://registry.npm.taobao.org",
+    "test": "echo master"
+  },
+  "husky": {
+    "hooks": {
+      "post-merge": "sh ./merge-install.sh"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "react": "^16.8.4"
+  },
+  "devDependencies": {
+    "husky": "^2.3.0"
+  }
+}
